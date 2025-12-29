@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift</title>
+    <style>
+        body { background: linear-gradient(180deg, #4b0082, #8a2be2); height: 100vh; display: flex; justify-content: center; align-items: center; font-family: sans-serif; margin: 0; color: white; }
+        .card { background: white; width: 280px; padding: 30px; border-radius: 40px; text-align: center; color: #333; }
+        .btn { background: #8a2be2; color: white; border: none; padding: 10px 30px; border-radius: 20px; cursor: pointer; margin-top: 10px; width: 100%; }
+        input { width: 90%; padding: 10px; margin: 10px 0; border-radius: 20px; border: 1px solid #ccc; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 style="color: #8a2be2">Christmas 2026</h2>
+        <p>ادخل كلمة السر لرؤية المفاجأة</p>
+        <input type="password" id="pass" placeholder="Password...">
+        <button class="btn" onclick="check()">فتح القفل 🔓</button>
+    </div>
+    <script>
+        function check() {
+            var p = document.getElementById('pass').value;
+            if(p === "1234") { // دي كلمة السر
+                alert("مبروك فتحت الهدية!");
+                window.location.href = "https://google.com"; // حط هنا رابط صورك
+            } else { alert("كلمة السر خطأ!"); }
+        }
+    </script>
+</body>
+</html>
